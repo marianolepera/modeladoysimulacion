@@ -1,0 +1,52 @@
+
+      <mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <p>METODO DE EULER</p>
+          </mat-toolbar-row>
+          </mat-toolbar>
+
+   
+        <div class="row">
+            <div class="col-9">
+              <mat-form-field>
+                <input matInput type="text" placeholder="Funcion de x(t)" name="userFunciones" [(ngModel)]="userFunciones">
+              </mat-form-field>
+              <br/>
+              <mat-form-field>
+                  <input matInput type="number" placeholder="Valor de a" name="a" [(ngModel)]="a">
+                </mat-form-field>
+                <br/>
+                <mat-form-field>
+                    <input matInput type="number" placeholder="Valor de b" name="b" [(ngModel)]="b">
+                  </mat-form-field>
+                  <br/>
+                  <mat-form-field>
+                      <input matInput type="number" placeholder="Valor de x0" name="x0" [(ngModel)]="x0">
+                    </mat-form-field>
+                    <br/>
+              <mat-form-field>
+                <input matInput type="number" placeholder="Puntos" name="puntos" [(ngModel)]="n">
+              </mat-form-field>
+              <br/>
+              
+             
+              
+              
+              <button mat-raised-button color="primary" (click)="ejecutar()">
+                GRAFICAR
+              </button>
+            </div>
+            <div class="col-12">
+              <div class="canvas-container">
+                <canvas id="euler">{{ eulerChart }}</canvas>
+              </div>
+            </div>
+          </div>
+
+    
+    
+  
+    
+    
+  
+    
